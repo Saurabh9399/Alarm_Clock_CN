@@ -1,0 +1,79 @@
+body{
+    background-image: url(butterfly.webp);
+    background-repeat: repeat;
+    background-size: contain;
+}
+
+.main-container{
+    width: 55%;
+    height: 90vh;
+    margin: 5rem auto;
+    border-radius: 4rem;
+    background: #FEAC5E;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #4BC0C8, #C779D0, #FEAC5E); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */    
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* border: 3px solid green !important; */
+}
+.main-container h1{
+    color: white;
+    margin: 5% 0%;
+}
+.alarm_button{
+    margin: auto 1rem;
+}
+.current_time{
+    font-size: 2.5rem;
+    color: white;
+}
+
+.alarm_input{
+    padding:0.5rem 1rem;
+}
+
+.alarms-list{
+    margin-top: 2%;
+    min-width: 60%;
+    border: 2px solid rgb(100, 110, 167);
+    color: navy;
+    padding: 2%;
+    height: 55vh;
+    overflow-y: scroll;
+    position: relative;
+}
+.alarms-list::-webkit-scrollbar{
+    display: none;
+}
+.alarms-list span{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: rgb(78, 0, 0);
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: rgba(185, 206, 65, 0.8);
+    border: 2px solid rgb(208, 255, 0);
+    padding: 1%;
+}
+
+
+@media only screen and (max-width: 650px) {
+    .main-container h1{
+       font-size: 1.2rem;
+       margin-top: 6rem;
+    }
+    .alarms-list{
+        min-width: 95%;
+    }
+    .alarm_input{
+        width: 60%;
+    }
+
+
+}
+
+
+
